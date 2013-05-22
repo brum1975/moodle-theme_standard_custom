@@ -1,0 +1,186 @@
+/** Base settings **/
+html{
+    background-color: transparent !important
+}
+#page{
+    background-color:#FFFFFF;
+    margin: 10px auto;
+}
+.block .content,.path-course-view .weeks .content, .path-course-view .topics .content, .path-course-view .weeks .section, .path-course-view .topics .section {
+    background: transparent;
+}
+
+/** CSS for the picker **/
+#colourswitcher{
+    background: #fff;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    opacity:1;
+    display: none;
+    z-index:1000;
+}
+.access_tools { background-color: #fff; border: 12px solid #FF403F; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px;}
+.access_tools #access_close, #toolbox_close { clear: right; float: right; margin-top: 10px; /*border-top: 1px solid #FACBB4; border-left: 1px solid #FACBB4;*/ padding: 0.5em; width: 11em; background-color: #FFA500; font-weight: bold; color: #fff;}
+#cstool {
+    overflow: auto;
+    padding-bottom: 1em;
+}
+#colourswitcher li, #txt_opt li {list-style:none;}
+#colourswitcher li { float: left; }
+#colourswitcher li a {
+    background: none repeat scroll 0 0 gray;
+    border: 1px solid #FFFFFF;
+    float: left;
+    margin: 0 1px 1px 0;
+    padding: 0.5em;
+    width: 10em;
+    height: 3em;
+}
+#colourswitcher #acc-backs a {
+    width: 5em;
+}
+#colourswitcher li a span { float: left; margin: 2px; padding: 0.25em;}
+#colourswitcher li a:hover { border: 1px solid gray;}
+#colourswitcher li a:hover, # colourswitcher li a:focus { text-decoration: none;}
+#colourswitcher li a:focus span, # colourswitcher li a:active span { margin: 0px; border: 2px solid red;}
+#colourswitcher ul, #colourswitcher h3 {clear:both;}
+#colourswitcher .colour-default a { background-color: #FFF; color: #000; border-color: #CCCCCC;}
+#colourswitcher .colour-grey a { background-color: #CCCCCC; color: #000;}
+#colourswitcher .colour-cream a { background-color: #FAEEA9; color: #000;}
+#colourswitcher .colour-blue a { background-color: #CBEAFC; color: #000;}
+#colourswitcher .colour-yellow a { background-color: #FFFF00; color: #000;  border-color: #CCCCCC;}
+#colourswitcher .colour-cyan a { background-color: #A0FFFA; color: #000;}
+#colourswitcher .colour-magenta a { background-color: #FFC9E8; color: #000;}
+#colourswitcher .colour-white a { background-color: #FFF; color: #000;  border-color: #CCCCCC;}
+#colourswitcher .colour-black a { background-color: #000; color: #FFF;}
+#colourswitcher .colour-blacktwo a { background-color: #000; color: #FFFF00;}
+#colourswitcher .colour-bluetwo a { background-color: #3B468B; color: #FFF;}
+#colourswitcher .colour-bluethree a { background-color: #3B468B; color: #FFFF00;}
+#colourswitcher li a, #txt_opt li a, #txt_opt .reset { 
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+#txt_opt {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+#txt_opt li {
+    float: left;
+    list-style: none outside none;
+}
+#txt_opt li a {
+    background-color: #000000;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 1px;
+    padding: 0.5em;
+    text-decoration: none;
+    height: auto;
+    width:auto;
+}
+/** Fonts **/
+.font-default{
+font-size:13.6px;
+}
+.font-small{
+font-size:16px;
+}
+.font-medium{
+font-size:17.6px;
+}
+.font-large{
+font-size:19.2px;
+}
+
+/** Colours **/
+.cs-white .block .header {
+background:none repeat scroll 0 0 #FFF;
+}
+
+.cs-grey #page,.cs-grey #page-header #accessbutton,.cs-grey #page-header .emailbutton,.cs-grey #page-header .logininfo,.cs-grey #page-footer,.cs-grey .navbar {
+background-color:#CCC;
+color:#000;
+}
+.cs-cream #page,.cs-cream #page-header #accessbutton,.cs-cream #page-header .emailbutton,.cs-cream #page-header .logininfo,.cs-cream #page-footer,.cs-cream .navbar{
+background-color:#FAEEA9;
+color:#000;
+}
+
+.cs-blue #page,.cs-blue #page-header #accessbutton,.cs-blue #page-header .emailbutton,.cs-blue #page-header .logininfo,.cs-blue #page-footer,.cs-blue .navbar{
+background-color:#CBEAFC;
+color:#000;
+}
+
+.cs-yellow #page,.cs-yellow #page-header #accessbutton,.cs-yellow #page-header .emailbutton,.cs-yellow #page-header .logininfo,.cs-yellow #page-footer,.cs-yellow .navbar{
+background-color:#FF0;
+color:#000;
+}
+
+.cs-cyan #page,.cs-cyan #page-header #accessbutton,.cs-cyan #page-header .emailbutton,.cs-cyan #page-header .logininfo,.cs-cyan #page-footer,.cs-cyan .navbar{
+background-color:#A0FFFA;
+color:#000;
+}
+
+.cs-magenta #page,.cs-magenta #page-header #accessbutton,.cs-magenta #page-header .emailbutton,.cs-magenta #page-header .logininfo,.cs-magenta #page-footer,.cs-magenta .navbar{
+background-color:#FFC9E8;
+color:#000;
+}
+
+.cs-black #page,.cs-blacktwo #page,.cs-black #page-header #accessbutton,.cs-blacktwo #page-header #accessbutton,.cs-black #page-header .emailbutton,.cs-blacktwo #page-header .emailbutton,.cs-black #page-header .logininfo,.cs-blacktwo #page-header .logininfo,.cs-black #page-footer,.cs-blacktwo #page-footer,.cs-black .navbar,.cs-blacktwo .navbar {
+background-color:#000;
+color:#FFF;
+}
+
+.cs-bluetwo #page,.cs-bluethree #page,.cs-bluetwo #page-header #accessbutton,.cs-bluethree #page-header #accessbutton,.cs-bluetwo #page-header .emailbutton,.cs-bluethree #page-header .emailbutton,.cs-bluetwo #page-header .logininfo,.cs-bluethree #page-header .logininfo,.cs-bluetwo #page-footer,.cs-bluethree #page-footer,.cs-bluetwo .navbar,.cs-bluethree .navbar{
+background-color:#3B468B;
+color:#FFF;
+}
+/** Backgrounds **/
+.csback-default, .back-default a{
+    background-color: #FDA70F !important;
+}
+.csback-a, .back-a a{
+	background:url([[pix:theme|wallpapers/hearts]]) repeat fixed 115px 95px #ED7BD3 !important;
+}
+.csback-b, .back-b a{
+	background:url([[pix:theme|wallpapers/stars]]) repeat fixed 73px 35px #3377F5 !important;
+}
+.csback-c, .back-c a{
+	background:url([[pix:theme|wallpapers/clouds]]) repeat fixed 73px 35px #B0E0E8 !important;
+}
+.csback-d, .back-d a{
+	background:url([[pix:theme|wallpapers/cupcake]]) repeat fixed 73px 35px #94CBCD !important;
+}
+.csback-e, .back-e a{
+	background:url([[pix:theme|wallpapers/metal]]) repeat fixed 73px 35px #AEB6BB !important;
+}
+.csback-f, .back-f a{
+	background:url([[pix:theme|wallpapers/grass]]) repeat fixed 73px 35px #4B9051 !important;
+}
+.csback-g, .back-g a{
+	background:url([[pix:theme|wallpapers/punchedholes]]) repeat fixed 73px 35px #2E2E2E !important;
+}
+/** Fonts **/
+.csfont-default {
+
+}
+.csfont-small {
+font-size: 1em;
+}
+.csfont-medium{
+font-size: 1.1em;
+}
+.csfont-large{
+font-size: 1.2em;
+}
+/** Width **/
+.cswidth-full #page{
+   width: 90%;
+}
+.cswidth-fixed #page{
+   max-width: 960px;
+}
+
+
