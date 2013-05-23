@@ -33,14 +33,19 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 
-/** Functions contained in lib.php**/
-$bodyclasses[] = 'csback-'.default_get_back();
-$bodyclasses[] = 'cs-'.default_get_colour();
-$bodyclasses[] = 'csfont-'.default_get_font();
-$bodyclasses[] = 'cswidth-'.default_get_width();
-$bodyclasses[] = date('MdY');
+/** EXTRA
+ * Functions below contained in lib.php **/
+
+//see lib.php for details about the function below
+//default_check_backswitch(); 
+
+$bodyclasses[] = 'cs-back-'.default_get_back();
+$bodyclasses[] = 'cs-colour-'.default_get_colour();
+$bodyclasses[] = 'cs-font-'.default_get_font();
+$bodyclasses[] = 'cs-width-'.default_get_width();
+$bodyclasses[] = date('MdY');//add date in format May022013
 default_initialise_colourswitcher($PAGE);
-/** End of standard_custom extra **/
+/** EXTRA - End of setup **/
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes() ?>>
@@ -65,9 +70,9 @@ echo $OUTPUT->doctype() ?>
             }
             echo $PAGE->headingmenu
         ?>
-<!-- Include following link to attach tool too -->      
+<!-- EXTRA - Include following link to add customise tool -->      
     <a href="#" id="customtool">Customize Theme</a>
-<!-- End of standard_custom extra -->        
+<!-- EXTRA - End of standard_custom extra -->        
         </div><?php } ?>
 
         <?php if ($hascustommenu) { ?>

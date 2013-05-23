@@ -1,4 +1,8 @@
 <?php
+/*
+ *All added code has EXTRA in comments. Search for EXTRA 
+ */
+
 
 $hassidepre = $PAGE->blocks->region_has_content('side-pre', $OUTPUT);
 $hassidepost = $PAGE->blocks->region_has_content('side-post', $OUTPUT);
@@ -28,14 +32,15 @@ if ($hascustommenu) {
     $bodyclasses[] = 'has_custom_menu';
 }
 
-/** Functions contained in lib.php**/
-$bodyclasses[] = 'csback-'.default_get_back();
-$bodyclasses[] = 'cs-'.default_get_colour();
-$bodyclasses[] = 'csfont-'.default_get_font();
-$bodyclasses[] = 'cswidth-'.default_get_width();
+/** EXTRA 
+ * Functions contained in lib.php**/
+$bodyclasses[] = 'cs-back-'.default_get_back();
+$bodyclasses[] = 'cs-colour-'.default_get_colour();
+$bodyclasses[] = 'cs-font-'.default_get_font();
+$bodyclasses[] = 'cs-width-'.default_get_width();
 $bodyclasses[] = date('MdY');
 default_initialise_colourswitcher($PAGE);
-/** End of standard_custom extra **/
+/** EXTRA - End of setup **/
 
 
 echo $OUTPUT->doctype() ?>
@@ -58,9 +63,9 @@ echo $OUTPUT->doctype() ?>
             echo $OUTPUT->lang_menu();
             echo $PAGE->headingmenu;
 ?>            
-<!-- Include following link to attach tool too -->      
+<!-- EXTRA - Include following link to attach customise tool -->      
         <a href="#" id="customtool">Customize Theme</a>
-<!-- End of Custom extra -->  
+<!-- EXTRA - End of standard_custom extra -->  
         </div>
   
         <?php if ($hascustommenu) { ?>
